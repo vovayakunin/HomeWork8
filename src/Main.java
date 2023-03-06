@@ -1,10 +1,18 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+
     }
 
-    public static void task1() {
+    public static void task1 () {
         System.out.println("Задача 1");
+
 
         int many = 15_000;
         int total = 0;
@@ -14,6 +22,8 @@ public class Main {
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
             i++;
         }
+    }
+    public static void task2 () {
 
         System.out.println("Задача 2");
 
@@ -24,11 +34,12 @@ public class Main {
             a++;
         }
         System.out.println();
-        while (b >= 1) {
+        for (b = 10; b >= 1; b--) {
             System.out.print(" " + b);
-            b--;
         }
         System.out.println();
+    }
+    public static void task3 () {
 
         System.out.println("Задача 3");
 
@@ -42,7 +53,8 @@ public class Main {
             System.out.printf("%.2f \n", population);
             year++;
         }
-
+    }
+    public static void task4 () {
         System.out.println("Задача 4");
 
         double cash = 15000;
@@ -50,7 +62,9 @@ public class Main {
             cash = cash + cash * 0.07;
             System.out.printf("%.2f \n", cash);
         }
+    }
 
+    public static void task5 () {
         System.out.println("Задача 5");
 
         double sum = 15000;
@@ -61,16 +75,19 @@ public class Main {
 
             }
         }
+    }
+    public static void task6 () {
+        System.out.println("Задача 6");
 
-            System.out.println("Задача 6");
-
-            double rub = 15000;
-            for (int months = 1; months <= 12 * 9; months++) {
-                rub = rub + rub * 0.07;
-                if (months % 6 == 0) {
-                    System.out.printf("Месяц " + months + " %.2f \n", rub);
-                }
+        double rub = 15000;
+        for (int months = 1; months <= 12 * 9; months++) {
+            rub = rub + rub * 0.07;
+            if (months % 6 == 0) {
+                System.out.printf("Месяц " + months + " %.2f \n", rub);
             }
+        }
+    }
+    public static void task7 () {
 
             System.out.println("Задача 7");
 
@@ -79,9 +96,9 @@ public class Main {
                 System.out.println("Сегодня пятница " + f + "-е число. Необходимо подготовить отчет.");
             }
 
+       }
     }
 
 
-}
 
 
